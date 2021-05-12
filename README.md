@@ -39,7 +39,7 @@ Run this command to clone the repository:
 
 ```git
 
-git clone https://github.com/AleNoia/userful-thingss-SCSS.git
+git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
