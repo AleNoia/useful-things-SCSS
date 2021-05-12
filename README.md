@@ -14,8 +14,8 @@ If you have any question, suggestion or want to contact, mail me:
 * 🎯 [Purpose](#Purpose)
 * 🛠 [Installation](#Installation)
 * 📝 [Utilization](#Utilization)
-  * 📦 [Flex](#Flex)
   * 📏 [Spacing](#Spacing)
+  * 📦 [Flex](#Flex)
 * 🤝 [Contributing](#Contributing)
 * 🧾 [License](#License)
 
@@ -62,56 +62,6 @@ This repository has the purpose of storing SCSS codes, so there are some folder 
  └── Main.scss
 ```
 
-## <a name="Flex"></a>📦 Flex
-
-Folder with mixins and classes to assign Flexbox.
-
-All mixins can receive two parameters:
-
-* ```$align```
-* ```$justify```
-
-### @mixin is-flex
-
-```scss
-@mixin is-flex($align, $justify) {
-    display: flex;
-    align-items: $align;
-    justify-content: $justify;
-    flex-wrap: wrap;
-}
-```
-
-### @mixin is-flex-column
-
-```scss
-@mixin is-flex-column($align, $justify) {
-    display: flex;
-    flex-direction: column;
-    align-items: $align;
-    justify-content: $justify;
-}
-```
-
-### @mixin is-flex-self
-
-```scss
-@mixin is-flex-self($align, $justify) {
-    display: flex;
-    align-self: $align;
-    justify-self: $justify;
-}
-```
-
-### class is-flex
-
-```scss
-.is-flex{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-```
 
 ## <a name="Spacing"></a>📏 Spacing
 
@@ -145,7 +95,14 @@ In margin you will have:
 }
 ```
 
-You will use `m-2` in HTML for example.
+You will use `m-2` in a class HTML for example.
+```html
+<div class="card m-2">
+    <h1>Card example</h1>
+</div>
+```
+
+- - - 
 
 ### Padding
 
@@ -171,6 +128,65 @@ In padding you will have:
 ```
 
 You will use `p-2` in HTML for example.
+```html
+<div class="card p-2">
+    <h1>Card example</h1>
+</div>
+```
+
+## <a name="Flex"></a>📦 Flex
+
+Folder with mixins and classes to assign Flexbox.
+
+All mixins can receive two parameters:
+
+* ```$align```
+* ```$justify```
+
+### @mixin is-flex
+#### 👨‍💻 [Codepen is-flex](https://codepen.io/alenoia/pen/PopZjLr)
+
+```scss
+@mixin is-flex($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: wrap;
+}
+```
+
+### @mixin is-flex-column
+#### 👨‍💻 [Codepen is-flex-column](https://codepen.io/alenoia/pen/LYWGjWM?editors=1100)
+
+```scss
+@mixin is-flex-column($align, $justify) {
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $justify;
+}
+```
+
+### @mixin is-flex-self
+
+```scss
+@mixin is-flex-self($align, $justify) {
+    display: flex;
+    align-self: $align;
+    justify-self: $justify;
+}
+```
+
+### class is-flex
+
+```scss
+.is-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+```
+
 
 ***
 
