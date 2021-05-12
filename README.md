@@ -14,6 +14,8 @@ If you have any question, suggestion or want to contact, mail me:
 * 🎯 [Purpose](#Purpose)
 * 🛠 [Installation](#Installation)
 * 📝 [Utilization](#Utilization)
+  * 📦 [Flex](#Flex)
+  * 📏 [Spacing](#Spacing)
 * 🤝 [Contributing](#Contributing)
 * 🧾 [License](#License)
 
@@ -60,7 +62,7 @@ This repository has the purpose of storing SCSS codes, so there are some folder 
  └── Main.scss
 ```
 
-## 📦 Flex
+## <a name="Flex"></a>📦 Flex
 
 Folder with mixins and classes to assign Flexbox.
 
@@ -111,7 +113,7 @@ All mixins can receive two parameters:
 }
 ```
 
-## 📏 Spacing
+## <a name="Spacing"></a>📏 Spacing
 
 Folder with mixins to assign spacing.
 
