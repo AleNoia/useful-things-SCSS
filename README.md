@@ -1,4 +1,4 @@
-# 🎨 Useful Things SCSS
+# 🎨 Useful Things to SCSS
 
 Useful things that I use in SCSS and that make the job easier.
 
@@ -15,7 +15,7 @@ If you have any question, suggestion or want to contact, mail me:
 * 🛠 [Installation](#Installation)
 * 📝 [Utilization](#Utilization)
   * 📏 [Spacing](#Spacing)
-  * 📦 [Flex](#Flex)
+  * 📦 [Flexbox](#Flex)
 * 🤝 [Contributing](#Contributing)
 * 🧾 [License](#License)
 
@@ -23,7 +23,7 @@ If you have any question, suggestion or want to contact, mail me:
 
 # <a name="features"></a>💡 Features
 
-* 📦 Simplified FlexBox
+* 📦 Simplified Flexbox
 * 📏 Spacing classes 
 ***
 
@@ -84,8 +84,6 @@ In margin you will have:
 * `.ml-NUMBER`  to margin left
 * `.mr-NUMBER`  to margin right
 
-#### ✏ Example:
-
 ```scss
 // ================================ Margin
 @for $i from 0 through $NumOfClass{
@@ -94,6 +92,8 @@ In margin you will have:
     }
 }
 ```
+
+#### ✏ Example:
 
 You will use `m-2` in a class HTML for example.
 ```html
@@ -116,8 +116,6 @@ In padding you will have:
 * `.pl-NUMBER` to padding left
 * `.pr-NUMBER` to padding right
 
-#### ✏ Example:
-
 ```scss
 // ================================ Padding
 @for $i from 0 through $NumOfClass{
@@ -127,6 +125,8 @@ In padding you will have:
 }
 ```
 
+#### ✏ Example:
+
 You will use `p-2` in HTML for example.
 ```html
 <div class="card p-2">
@@ -134,7 +134,7 @@ You will use `p-2` in HTML for example.
 </div>
 ```
 
-## <a name="Flex"></a>📦 Flex
+## <a name="Flex"></a>📦 Flexbox
 
 Folder with mixins and classes to assign Flexbox.
 
@@ -143,8 +143,7 @@ All mixins can receive two parameters:
 * ```$align```
 * ```$justify```
 
-### @mixin is-flex
-#### 👨‍💻 [Codepen is-flex](https://codepen.io/alenoia/pen/PopZjLr)
+### @mixin is-flex / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/PopZjLr)
 
 ```scss
 @mixin is-flex($align, $justify) {
@@ -154,9 +153,9 @@ All mixins can receive two parameters:
     flex-wrap: wrap;
 }
 ```
+***
 
-### @mixin is-flex-column
-#### 👨‍💻 [Codepen is-flex-column](https://codepen.io/alenoia/pen/LYWGjWM?editors=1100)
+### @mixin is-flex-column / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/LYWGjWM?editors=1100)
 
 ```scss
 @mixin is-flex-column($align, $justify) {
@@ -167,17 +166,20 @@ All mixins can receive two parameters:
 }
 ```
 
-### @mixin is-flex-self
+***
+
+### @mixin is-flex-self / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/NWpxMBp?editors=1100)
 
 ```scss
 @mixin is-flex-self($align, $justify) {
-    display: flex;
     align-self: $align;
     justify-self: $justify;
 }
 ```
 
-### class is-flex
+***
+
+### .class is-flex / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/JjWGZEj?editors=1100)
 
 ```scss
 .is-flex{
@@ -186,7 +188,6 @@ All mixins can receive two parameters:
     justify-content: flex-start;
 }
 ```
-
 
 ***
 
@@ -200,4 +201,4 @@ Feel free to contribute 🙂
 
 Released in 2021. This project is under the [MIT license](https://github.com/AleNoia/todolist/blob/main/LICENSE).
 
-Made by [Igor Noia](https://github.com/AleNoia) 🤙
+Made by [Igor Noia](https://github.com/AleNoia)  ✌
