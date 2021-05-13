@@ -85,6 +85,9 @@ In margin you will have:
 * `.mr-NUMBER`  to margin right
 
 ```scss
+$NumOfClass: 7;
+$SpacingEm: 0.4;
+
 // ================================ Margin
 @for $i from 0 through $NumOfClass{
     .m*#{$i * 1}{
@@ -117,6 +120,9 @@ In padding you will have:
 * `.pr-NUMBER` to padding right
 
 ```scss
+$NumOfClass: 7;
+$SpacingEm: 0.4;
+
 // ================================ Padding
 @for $i from 0 through $NumOfClass{
     .p*#{$i * 1}{
