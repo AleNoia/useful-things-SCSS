@@ -159,6 +159,15 @@ All mixins can receive two parameters:
     flex-wrap: wrap;
 }
 ```
+
+#### ✏ Example:
+
+```scss
+body{
+  @include is-flex(center, center)
+}
+```
+
 ***
 
 ### @mixin is-flex-column / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/LYWGjWM?editors=1100)
@@ -169,6 +178,14 @@ All mixins can receive two parameters:
     flex-direction: column;
     align-items: $align;
     justify-content: $justify;
+}
+```
+
+#### ✏ Example:
+
+```scss
+body{
+  @include is-flex-column(center, space-around)
 }
 ```
 
@@ -183,6 +200,17 @@ All mixins can receive two parameters:
 }
 ```
 
+#### ✏ Example:
+
+```scss
+body{
+  display: flex;
+}
+.card{
+  @include is-flex-self(center, center)
+}
+```
+
 ***
 
 ### .class is-flex / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/JjWGZEj?editors=1100)
@@ -193,6 +221,19 @@ All mixins can receive two parameters:
     align-items: flex-start;
     justify-content: flex-start;
 }
+```
+
+#### ✏ Example:
+
+```html
+<body class="is-flex">
+    <div class="card">
+        <h1>Card example #1</h1>
+    </div>
+    <div class="card">
+        <h1>Card example #2</h1>
+    </div>
+</body>
 ```
 
 ***
