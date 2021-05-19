@@ -291,6 +291,52 @@ $gradient1: linear-gradient(
 
 ---
 
+## <a name="Components"></a>🧩 Components
+
+Basic components
+
+- 🖱 [Scroll](#Scroll)
+
+## <a name="Scroll"></a>🖱 Scroll
+
+Scroll style
+
+### 📍 Scroll #1 / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/OJpbNQV)
+
+```scss
+//================================================================ [VARIABLES]
+$colorBackground: #fff9dc;
+$gradient1: linear-gradient(
+  to right top,
+  #ff930a,
+  #fd7328,
+  #f5543c,
+  #e6344c,
+  #d1105a
+);
+
+//================================================================ [SCROLL]
+@mixin scroll() {
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: $colorBackground;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 0.7em;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-image: $gradient1;
+    cursor: pointer;
+  }
+}
+```
+
+---
+
 # <a name="Contributing"></a>🤝 Contributing
 
 Feel free to contribute 🙂
