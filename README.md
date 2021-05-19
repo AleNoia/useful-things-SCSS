@@ -16,6 +16,7 @@ If you have any question, suggestion or want to contact, mail me:
 * 📝 [Utilization](#Utilization)
   * 📏 [Spacing](#Spacing)
   * 📦 [Flexbox](#Flex)
+  * 🧩 [Components](#Components)
 * 🤝 [Contributing](#Contributing)
 * 🧾 [License](#License)
 
@@ -50,7 +51,11 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 This repository has the purpose of storing SCSS codes, so there are some folder divisions according to each functionality.
 
 ```
-/style
+/usefulScss
+ |
+ ├── /Components
+ |   ├── /Scroll.scss
+ |       ├── Scroll.scss
  |
  ├── /Flex
  |   ├── _isFLex.scss
@@ -235,6 +240,48 @@ body{
     </div>
 </body>
 ```
+
+***
+
+## <a name="Components"></a>🧩 Components
+
+Basic components
+
+
+  * 🖱 [Scroll](#Scroll)
+
+## <a name="Scroll"></a>🖱 Scroll 
+
+Scroll style
+
+### 📍 Scroll #1 / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/OJpbNQV)
+
+```scss
+//================================================================ [VARIABLES]
+$colorBackground: #fff9dc;
+$gradient1: linear-gradient(to right top, #ff930a, #fd7328, #f5543c, #e6344c, #d1105a);
+
+//================================================================ [SCROLL]
+@mixin scroll() {
+  &::-webkit-scrollbar {
+    width: .5em;
+    background-color: $colorBackground;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: .7em;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-image: $gradient1;
+    cursor: pointer;
+  }
+}
+```
+
+
 
 ***
 
