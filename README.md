@@ -54,8 +54,7 @@ This repository has the purpose of storing SCSS codes, so there are some folder 
 /usefulScss
  |
  ├── /Components
- |   ├── /Scroll.scss
- |       ├── Scroll.scss
+ |   ├── _Scroll.scss
  |
  ├── /Flex
  |   ├── _isFLex.scss
@@ -248,6 +247,7 @@ body{
 Basic components
 
 
+### 📌 Table of Contents
   * 🖱 [Scroll](#Scroll)
 
 ## <a name="Scroll"></a>🖱 Scroll 
@@ -262,7 +262,7 @@ $colorBackground: #fff9dc;
 $gradient1: linear-gradient(to right top, #ff930a, #fd7328, #f5543c, #e6344c, #d1105a);
 
 //================================================================ [SCROLL]
-@mixin scroll() {
+@mixin scroll1() {
   &::-webkit-scrollbar {
     width: .5em;
     background-color: $colorBackground;
