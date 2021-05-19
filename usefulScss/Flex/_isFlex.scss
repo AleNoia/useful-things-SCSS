@@ -12,8 +12,7 @@
     justify-content: $justify;
 }
 
-@mixin is-self($align, $justify) {
-    display: flex;
+@mixin is-flex-self($align, $justify) {
     align-self: $align;
     justify-self: $justify;
 }
