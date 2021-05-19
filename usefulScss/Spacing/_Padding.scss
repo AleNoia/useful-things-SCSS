@@ -6,9 +6,6 @@ $SpacingEm: 0.4;
 @for $i from 0 through $NumOfClass{
     .p-#{$i * 1}{
         padding: #{$i * $SpacingEm}em;
-        width: 250px;
-        height: 250px;
-        background-color: hsl(0, 0%, 100%);
     }
 }
 // ================================ X-axis padding
