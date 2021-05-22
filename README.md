@@ -50,6 +50,8 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
+Run a live compilation of SCSS
+
 ***
 
 # <a name="Utilization"></a>📝 Utilization
