@@ -37,7 +37,6 @@
 // ========== [SECONDARY]
 .btn-secondary {
     background-image: $color-secondary;
-    border: 1px solid #343a40;
     color: #343a40;
 }
 
@@ -57,7 +56,6 @@
     &:hover {
         box-shadow: $shadow-1;
         transform: scale(1.1);
-        background-color: $color-2;
 
         i {
             transform: scale(1.2);
