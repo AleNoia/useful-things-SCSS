@@ -1,6 +1,6 @@
 # 🎨 Useful Things to SCSS
 
-Useful things that I use in SCSS and that make the job easier.
+Useful things that I use in SCSS and that make the work easier.
 
 If you have any question, suggestion or want to contact, mail me:
 
@@ -30,8 +30,15 @@ If you have any question, suggestion or want to contact, mail me:
 
 # <a name="features"></a>💡 Features
 
+* 💽 Reset css
+* 🎨 Colors with organization and styles
+* ☂ Shadows with organization and styles
+* ✅ Buttons and animation style
+* 🎢 Transition with organization 
 * 📦 Simplified Flexbox
+* 🖥 Simplified grids in class
 * 📏 Spacing classes 
+* 🧩 Components basics
 ***
 
 # <a name="Purpose"></a>🎯 Purpose
@@ -195,6 +202,18 @@ There are four types of buttons:
 }
 ```
 
+***
+
+## <a name="Transition"></a>🎢 Transition 
+
+Here you can enter the transitions of your project.
+
+```scss
+$transition-1: ease .15s;
+```
+
+**OBS: It is advisable to follow the "transition-number" pattern**
+
 *** 
 
 ## <a name="Spacing"></a>📏 Spacing
@@ -286,6 +305,7 @@ All mixins can receive two parameters:
 ### @mixin is-flex / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/PopZjLr)
 
 ```scss
+// ========== [IS-FLEX]
 @mixin is-flex($align, $justify) {
     display: flex;
     align-items: $align;
@@ -307,6 +327,7 @@ body{
 ### @mixin is-flex-column / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/LYWGjWM?editors=1100)
 
 ```scss
+// ========== [IS-FLEX-COLOUMN]
 @mixin is-flex-column($align, $justify) {
     display: flex;
     flex-direction: column;
@@ -328,6 +349,7 @@ body{
 ### @mixin is-flex-self / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/NWpxMBp?editors=1100)
 
 ```scss
+// ========== [IS-FLEX-SELF]
 @mixin is-flex-self($align, $justify) {
     align-self: $align;
     justify-self: $justify;
@@ -350,6 +372,7 @@ body{
 ### .class is-flex / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/JjWGZEj?editors=1100)
 
 ```scss
+// ========== [IS-FLEX]
 .is-flex{
     display: flex;
     align-items: flex-start;
@@ -372,6 +395,45 @@ body{
 
 ***
 
+## <a name="Grid"></a>🖥 Grid / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/ExWWbgL?editors=1100)
+
+Customizable grid system
+
+```scss
+// ======================================== [VARIABLES]
+$grid-gutter: 1%; 
+$grid-columns: 12; 
+$grid-max: 980px; 
+
+// ======================================== [GRID]
+* {
+    box-sizing: border-box;
+}
+[class*="grid-"] {
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 $grid-gutter;
+}
+
+@for $i from 1 through $grid-columns{ 
+  .grid-#{$i} {
+    width: 100% / $grid-columns * $i;
+  }
+}
+```
+
+#### ✏ Example:
+```html
+<div class="grid-2">
+  <h1>Grid 2</h1>
+</div>
+<div class="grid-10">
+  <h1>Grid 10</h1>
+</div>
+```
+
+***
+
 ## <a name="Components"></a>🧩 Components
 
 Basic components
@@ -387,9 +449,8 @@ Scroll style
 ### 📍 Scroll #1 / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/OJpbNQV)
 
 ```scss
-//================================================================ [VARIABLES]
-$colorBackground: #fff9dc;
-$gradient1: linear-gradient(to right top, #ff930a, #fd7328, #f5543c, #e6344c, #d1105a);
+//================================================================ [IMPORTS]
+@import '../colors';
 
 //================================================================ [SCROLL]
 @mixin scroll1() {
