@@ -30,8 +30,15 @@ If you have any question, suggestion or want to contact, mail me:
 
 # <a name="features"></a>💡 Features
 
+* 💽 Reset css
+* 🎨 Colors with organization and styles
+* ☂ Shadows with organization and styles
+* ✅ Buttons and animation style
+* 🎢 Transition with organization 
 * 📦 Simplified Flexbox
+* 🖥 Simplified grids in class
 * 📏 Spacing classes 
+* 🧩 Components basics
 ***
 
 # <a name="Purpose"></a>🎯 Purpose
