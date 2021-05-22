@@ -14,8 +14,14 @@ If you have any question, suggestion or want to contact, mail me:
 * 🎯 [Purpose](#Purpose)
 * 🛠 [Installation](#Installation)
 * 📝 [Utilization](#Utilization)
-  * 📏 [Spacing](#Spacing)
+  * 💽 [Reset](#Reset)
+  * 🎨 [Colors](#Colors)
+  * ☂ [Shadow](#Shadow)
+  * ✅ [Buttons](#Buttons)
+  * 🎢 [Transition](#Transition)
   * 📦 [Flexbox](#Flex)
+  * 🖥 [Grid](#Grid)
+  * 📏 [Spacing](#Spacing)
   * 🧩 [Components](#Components)
 * 🤝 [Contributing](#Contributing)
 * 🧾 [License](#License)
@@ -44,6 +50,8 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
+Run a live compilation of SCSS
+
 ***
 
 # <a name="Utilization"></a>📝 Utilization
@@ -56,16 +64,138 @@ This repository has the purpose of storing SCSS codes, so there are some folder 
  ├── /Components
  |   ├── _Scroll.scss
  |
- ├── /Flex
- |   ├── _isFLex.scss
- |
  ├── /Spacing
  |   ├── _Margin.scss
  |   ├── _Padding.scss
  |
- └── Main.scss
+ ├── _buttons.scss
+ ├── _colors.scss
+ ├── _isFlex.scss
+ |   ...
+ |
+ └── mainUseful.scss
+```
+***
+
+## <a name="Reset"></a>💽 Reset
+
+A reset css by [Meyerweb](https://meyerweb.com/eric/tools/css/reset/)
+
+***
+
+## <a name="Colors"></a>🎨 Colors
+
+In colors there are three divisions:
+
+### Colors project
+
+Here you can enter the colors of your project.
+```scss
+$color-1: #0096c7;
 ```
 
+### Gradient project
+
+Here you can enter the gradients of your project.
+```scss
+$color-1: #0096c7;
+```
+
+### Colors buttons
+
+Default button colors
+```scss
+$color-primary: linear-gradient(to right bottom, #0069d9, #1374e1, #2280ea, #2f8bf1, #3b97f9);
+$color-secondary: hsla(0, 0%, 100%, 0);
+$color-success: linear-gradient(to right bottom, #00b027, #09ba2f, #11c536, #17cf3e, #1cda45);
+$color-danger: linear-gradient(to right bottom, #c82333, #d53341, #e1424f, #ed505d, #f95d6c);
+```
+
+**OBS: It is advisable to follow the "type-color-number" pattern**
+
+*** 
+
+## <a name="Shadow"></a>☂ Shadow
+
+Here you can enter the shadows of your project.
+```scss
+$shadow-1: hsla(0, 0%, 0%, 0.25) 0px 5px 10px;
+```
+
+**OBS: It is advisable to follow the "type-shadow-number" pattern**
+
+***
+
+## <a name="Buttons"></a>✅ Buttons / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/jOBBqKb?editors=1100)
+
+There is a standard class to be a button: ```btn```
+
+```html
+<button class="btn">Button</button>
+```
+
+There are four types of buttons:
+
+### Primary button
+
+```scss
+// ========== [PRIMARY]
+.btn-primary {
+    background-image: $color-primary;
+}
+```
+
+### Secondary button
+
+```scss
+// ========== [SECONDARY]
+.btn-secondary {
+    background-image: $color-secondary;
+    color: #343a40;
+}
+```
+
+### Success button
+
+```scss
+// ========== [SUCCESS]
+.btn-success {
+    background-image: $color-success;
+}
+```
+
+### Danger button
+
+```scss
+// ========== [DANGER]
+.btn-danger {
+    background-image: $color-danger;
+}
+```
+
+### To up
+
+```scss
+// ========== [TO UP]
+.btn-up {
+
+    &:hover {
+        box-shadow: $shadow-1;
+        transform: scale(1.1);
+
+        i {
+            transform: scale(1.2);
+        }
+    }
+
+    &:active {
+        transform: scale(0.99);
+        outline: none;
+    }
+}
+```
+
+*** 
 
 ## <a name="Spacing"></a>📏 Spacing
 
