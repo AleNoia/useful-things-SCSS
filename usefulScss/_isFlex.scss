@@ -1,3 +1,5 @@
+// ======================================== [FLEX]
+// ========== [IS-FLEX]
 @mixin is-flex($align, $justify) {
     display: flex;
     align-items: $align;
@@ -5,6 +7,7 @@
     flex-wrap: wrap;
 }
 
+// ========== [IS-FLEX-COLOUMN]
 @mixin is-flex-column($align, $justify) {
     display: flex;
     flex-direction: column;
@@ -12,14 +15,15 @@
     justify-content: $justify;
 }
 
+// ========== [IS-FLEX-SELF]
 @mixin is-flex-self($align, $justify) {
     align-self: $align;
     justify-self: $justify;
 }
 
+// ========== [IS-FLEX]
 .is-flex{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
-

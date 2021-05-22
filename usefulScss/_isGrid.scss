@@ -1,15 +1,16 @@
-$grid-gutter: 1%;
-$grid-columns: 12;
-$grid-max: 980px;
+// ======================================== [VARIABLES]
+$grid-gutter: 1%; 
+$grid-columns: 12; 
+$grid-max: 980px; 
+
+// ======================================== [GRID]
 * {
     box-sizing: border-box;
 }
 [class*="grid-"] {
-  background: lightgray;
-  outline: 1px solid gray;
   float: left;
-  padding: 0 $grid-gutter;
   margin-bottom: 20px;
+  padding: 0 $grid-gutter;
 }
 
 @for $i from 1 through $grid-columns{ 
