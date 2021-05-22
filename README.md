@@ -149,7 +149,6 @@ There are four types of buttons:
 // ========== [SECONDARY]
 .btn-secondary {
     background-image: $color-secondary;
-    border: 1px solid #343a40;
     color: #343a40;
 }
 ```
