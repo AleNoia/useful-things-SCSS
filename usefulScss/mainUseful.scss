@@ -1,4 +1,11 @@
+// ======================================== [IMPORTS]
+@import './reset';
+@import './colors';
+@import './shadow';
+@import './buttons';
+@import './transition';
+@import './isFlex';
+@import './isGrid';
 @import './Spacing/Margin';
 @import './Spacing/Padding';
-@import './Flex/isFlex';
-@import './Components/Scroll/scroll';
+@import './Components/scroll';
