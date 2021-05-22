@@ -2,7 +2,7 @@
 @import '../colors';
 
 // ======================================== [SCROLL]
-@mixin scroll1() {
+@mixin scroll-1() {
   &::-webkit-scrollbar {
     width: .5em;
   }
