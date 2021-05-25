@@ -2,9 +2,9 @@
 
 Useful things that I use in SCSS and that make the work easier.
 
-If you have any question, suggestion or want to contact, mail me:
+If you want to contact, mail me or send a message on Twitter
 
-📧 igornoiasilva@gmail.com.
+📧 igornoiasilva@gmail.com / ☕ [@IgorNoiaSilva](https://twitter.com/IgorNoiaSilva)
 
 ***
 
@@ -49,6 +49,8 @@ My purpose with this repository is to share my SCSS codes and also receive contr
 
 # <a name="Installation"></a>🛠 Installation
 
+First you need to download [git](https://git-scm.com) initially
+
 Run this command to clone the repository:
 
 ```git
@@ -57,7 +59,7 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
-Run a live compilation of SCSS
+Run a compilation of SCSS like [Live SASS](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ***
 
