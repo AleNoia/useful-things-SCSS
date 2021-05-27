@@ -113,7 +113,7 @@ $color-1: #0096c7;
 
 Here you can enter the gradients of your project.
 ```scss
-$color-1: #0096c7;
+$gradient-1: linear-gradient(to left top, #8ff8ff, #97f6ff, #a0f4ff, #a8f1ff, #b0efff);
 ```
 
 ### Colors buttons
