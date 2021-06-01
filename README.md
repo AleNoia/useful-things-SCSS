@@ -69,7 +69,7 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
-Run a compilation of SCSS like [Live SASS](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+Run a compiler SCSS like [Live SASS](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ***
 
@@ -93,10 +93,14 @@ This repository has the purpose of storing SCSS codes, so there are some folder 
  |
  ├── _colors.scss
  ├── _isFlex.scss
+ ├── _project.scss
  |   ...
  |
  └── mainUseful.scss
 ```
+
+In the ```project``` folder enter your project's codes.
+
 ***
 
 ## <a name="Reset"></a>💽 Reset
