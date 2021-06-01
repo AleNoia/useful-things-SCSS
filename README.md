@@ -21,7 +21,6 @@ Useful things that I use in SCSS and that make the work easier.
   * 💽 [Reset](#Reset)
   * 🎨 [Colors](#Colors)
   * ☂ [Shadow](#Shadow)
-  * ✅ [Buttons](#Buttons)
   * 🎢 [Transition](#Transition)
   * 📦 [Flexbox](#Flex)
   * 🖥 [Grid](#Grid)
