@@ -1,10 +1,14 @@
-# 🎨 Useful Things to SCSS
+<h1 align="center">
+    🎨 Useful Things to SCSS
+</h1>
 
+<p align="center">
 Useful things that I use in SCSS and that make the work easier.
+</p>
 
-If you have any question, suggestion or want to contact, mail me:
-
-📧 igornoiasilva@gmail.com.
+<p align="center">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/AleNoia/useful-things-SCSS?color=%2304D361"> <img alt="Repository size" src="https://img.shields.io/github/repo-size/AleNoia/useful-things-SCSS"> <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/AleNoia/useful-things-SCSS">
+</p>
 
 ***
 
@@ -24,6 +28,8 @@ If you have any question, suggestion or want to contact, mail me:
   * 📏 [Spacing](#Spacing)
   * 🧩 [Components](#Components)
 * 🤝 [Contributing](#Contributing)
+* ⚙ [Technologies Used](#TechnologiesUsed)
+* 👋 [Author](#Author)
 * 🧾 [License](#License)
 
 ***
@@ -49,6 +55,8 @@ My purpose with this repository is to share my SCSS codes and also receive contr
 
 # <a name="Installation"></a>🛠 Installation
 
+First you need to download [git](https://git-scm.com) initially
+
 Run this command to clone the repository:
 
 ```git
@@ -57,7 +65,7 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
-Run a live compilation of SCSS
+Run a compilation of SCSS like [Live SASS](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ***
 
@@ -105,7 +113,7 @@ $color-1: #0096c7;
 
 Here you can enter the gradients of your project.
 ```scss
-$color-1: #0096c7;
+$gradient-1: linear-gradient(to left top, #8ff8ff, #97f6ff, #a0f4ff, #a8f1ff, #b0efff);
 ```
 
 ### Colors buttons
@@ -472,13 +480,37 @@ Scroll style
 }
 ```
 
+***
 
+# <a name="TechnologiesUsed"></a> ⚙ Technologies used
+
+Technologies that were used in the construction of the project:
+
+- [SCSS](https://sass-lang.com)
 
 ***
 
 # <a name="Contributing"></a>🤝 Contributing
 
+1. Fork the project.
+2. Create a new branch with your changes: ```git checkout -b my-feature```
+3. Save your changes and create a commit message telling you what you did: ```git commit -m" feature: My new feature "```
+4. Submit your changes: ```git push origin my-feature```
+5. Now just open your pull request in the repository that you forked describing your changes
+6. After the merge of your pull request is done, you can delete yout branch
+
+> If you have any questions check [this guide](https://github.com/unform/unform/blob/main/.github/CONTRIBUTING.md) on how to contribute
+ 
 Feel free to contribute 🙂
+
+***
+# <a name="Author"></a>👋 Author
+
+### [Igor Noia Silva](https://github.com/AleNoia)
+
+If you want to contact, mail me or send a message on Twitter
+
+[![Gmail Badge](https://img.shields.io/badge/-igornoiasilva@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:igornoiasilva@gmail.com)](mailto:igornoiasilva@gmail.com)  ![badge](https://img.shields.io/twitter/url?label=%40IgorNoiaSilva&style=social&url=https%3A%2F%2Ftwitter.com%2FIgorNoiaSilva)
 
 ***
 
