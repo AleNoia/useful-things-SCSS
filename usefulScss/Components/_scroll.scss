@@ -2,11 +2,12 @@
 @import '../colors';
 
 // ======================================== [SCROLL]
+// ========== [TYPE 1]
 @mixin scroll-1() {
   &::-webkit-scrollbar {
     width: .5em;
   }
-
+  
   &::-webkit-scrollbar-track {
     border-radius: .7em;
   }
@@ -17,6 +18,7 @@
   }
 }
 
+// ========== [TYPE 2]
 @mixin scroll-2() {
   &::-webkit-scrollbar {
     width: 17px;
