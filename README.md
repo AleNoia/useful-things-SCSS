@@ -21,7 +21,6 @@ Useful things that I use in SCSS and that make the work easier.
   * 💽 [Reset](#Reset)
   * 🎨 [Colors](#Colors)
   * ☂ [Shadow](#Shadow)
-  * ✅ [Buttons](#Buttons)
   * 🎢 [Transition](#Transition)
   * 📦 [Flexbox](#Flex)
   * 🖥 [Grid](#Grid)
@@ -36,15 +35,20 @@ Useful things that I use in SCSS and that make the work easier.
 
 # <a name="features"></a>💡 Features
 
+* 📁 Organization
 * 💽 Reset css
-* 🎨 Colors with organization and styles
-* ☂ Shadows with organization and styles
-* ✅ Buttons and animation style
-* 🎢 Transition with organization 
+* 🎨 Colors
+* ☂ Shadows styles
+* 🎢 Transition
 * 📦 Simplified Flexbox
-* 🖥 Simplified grids in class
+* 🖥 Simplified grids into classes
 * 📏 Spacing classes 
-* 🧩 Components basics
+* 🧩 Components basics like
+    * Buttons and animation style
+    * Card
+    * Navbar Vertical
+    * Footer
+    * Scroll
 ***
 
 # <a name="Purpose"></a>🎯 Purpose
@@ -65,7 +69,7 @@ git clone https://github.com/AleNoia/useful-thingss-SCSS.git
 
 ```
 
-Run a compilation of SCSS like [Live SASS](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+Run a compiler SCSS like [Live SASS](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ***
 
@@ -77,19 +81,26 @@ This repository has the purpose of storing SCSS codes, so there are some folder 
 /usefulScss
  |
  ├── /Components
- |   ├── _Scroll.scss
+ |   ├── _buttons.scss
+ |   ├── _card.scss
+ |   ├── _footer.scss
+ |   ├── _navbarVertical.scss
+ |   ├── _scroll.scss
  |
  ├── /Spacing
  |   ├── _Margin.scss
  |   ├── _Padding.scss
  |
- ├── _buttons.scss
  ├── _colors.scss
  ├── _isFlex.scss
+ ├── _project.scss
  |   ...
  |
  └── mainUseful.scss
 ```
+
+In the ```project``` folder enter your project's codes.
+
 ***
 
 ## <a name="Reset"></a>💽 Reset
@@ -138,77 +149,6 @@ $shadow-1: hsla(0, 0%, 0%, 0.25) 0px 5px 10px;
 ```
 
 **OBS: It is advisable to follow the "type-shadow-number" pattern**
-
-***
-
-## <a name="Buttons"></a>✅ Buttons / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/jOBBqKb?editors=1100)
-
-There is a standard class to be a button: ```btn```
-
-```html
-<button class="btn">Button</button>
-```
-
-There are four types of buttons:
-
-### Primary button
-
-```scss
-// ========== [PRIMARY]
-.btn-primary {
-    background-image: $color-primary;
-}
-```
-
-### Secondary button
-
-```scss
-// ========== [SECONDARY]
-.btn-secondary {
-    background-image: $color-secondary;
-    color: #343a40;
-}
-```
-
-### Success button
-
-```scss
-// ========== [SUCCESS]
-.btn-success {
-    background-image: $color-success;
-}
-```
-
-### Danger button
-
-```scss
-// ========== [DANGER]
-.btn-danger {
-    background-image: $color-danger;
-}
-```
-
-### To up
-
-```scss
-// ========== [TO UP]
-.btn-up {
-
-    &:hover {
-        box-shadow: $shadow-1;
-        transform: scale(1.1);
-
-        i {
-            transform: scale(1.2);
-        }
-    }
-
-    &:active {
-        transform: scale(0.99);
-        outline: none;
-    }
-}
-```
 
 ***
 
@@ -403,6 +343,33 @@ body{
 
 ***
 
+### .class is-flex-column / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/bGqaXjP?editors=1100)
+
+```scss
+// ========== [IS-FLEX-COLUMN]
+.is-flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+```
+
+#### ✏ Example:
+
+```html
+<main class="is-flex-column">
+  <div class="card ">
+    <h1>Card example #1</h1>
+  </div>
+  <div class="card">
+    <h1>Card example #1</h1>
+  </div>
+</main>
+```
+
+***
+
 ## <a name="Grid"></a>🖥 Grid / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/ExWWbgL?editors=1100)
 
 Customizable grid system
@@ -448,20 +415,174 @@ Basic components
 
 
 ### 📌 Table of Contents
-  * 🖱 [Scroll](#Scroll)
+  *  [Buttons](#Buttons)
+  *  [Card](#Card)
+  *  [Navbar](#Navbar)
+  *  [Footer](#Footer)
+  *  [Scroll](#Scroll)
 
-## <a name="Scroll"></a>🖱 Scroll 
+
+##
+
+## 📍 <a name="Buttons"></a> Buttons / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/jOBBqKb?editors=1100)
+
+There is a standard class to be a button: ```btn```
+
+```html
+<button class="btn btn-primary">Button</button>
+```
+
+There are four types of buttons:
+
+### Primary button
+
+```scss
+.btn-primary {
+    background-image: $color-primary;
+}
+```
+
+###  Secondary button
+
+```scss
+.btn-secondary {
+    background-image: $color-secondary;
+    color: #343a40;
+}
+```
+
+###  Success button
+
+```scss
+.btn-success {
+    background-image: $color-success;
+}
+```
+
+###  Danger button
+
+```scss
+.btn-danger {
+    background-image: $color-danger;
+}
+```
+
+### To up
+
+```scss
+.btn-up {
+
+    &:hover {
+        box-shadow: $shadow-1;
+        transform: scale(1.1);
+
+        i {
+            transform: scale(1.2);
+        }
+    }
+
+    &:active {
+        transform: scale(0.99);
+        outline: none;
+    }
+}
+```
+
+##
+
+## 📍 <a name="Card"></a> Card / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/QWpQLNN?editors=1100)
+
+Card style
+
+```scss
+.card {
+    padding: 1em 1.5em;
+    border-radius: 13px;
+    margin-bottom: .8em;
+    box-shadow: $shadow-1;
+    background-color: rgb(255, 255, 255);
+}
+```
+##
+
+## 📍 <a name="Navbar"></a> Navbar 
+
+### Navbar Vertical
+#### The body and main have to have these settings
+```scss
+body {
+    @include is-flex(flex-start, flex-start);
+}
+
+main {
+    @extend .grid-9; // According to your grid
+}
+```
+#### ✏ Example:
+#### SCSS
+```scss
+.navbarVertical{
+    @include navbar-vertical-1();
+}
+```
+#### HTML
+```html
+<nav class="navbarVertical">
+    <div class="navbarContent">
+        <div class="navBrand">
+            <h1>Brand</h1>
+        </div>
+        <ul class="namesList">
+            <button class="btn navItem">Item</button>
+        </ul>
+    </div>
+</nav>
+```
+##
+
+## 📍 <a name="Footer"></a> Footer 
+
+Simple Footer Style
+
+#### ✏ Example:
+
+```html
+<footer>
+    <h1 class="mb-5">
+        <strong>Developed</strong> by <a href="https://github.com/AleNoia" class="a" target="_blank">Igor Noia
+            Silva</a>
+    </h1>
+    <div class="footer-buttons">
+        <a href="https://github.com/AleNoia" target="_blank" class="mr-2">
+            <button class="btn btn-footer">
+                <span>Github</span>
+            </button>
+        </a>
+        <a href="https://www.linkedin.com/in/igor-noia-619a0820b/" target="_blank" class="mr-2">
+            <button class="btn btn-footer">
+                <span>Linkedin</span>
+            </button>
+        </a>
+        <a href="https://github.com/AleNoia/client-manager" target="_blank">
+            <button class="btn btn-footer">
+                <span>Documentation</span>
+            </button>
+        </a>
+    </div>
+</footer>
+```
+
+##
+
+## 📍 <a name="Scroll"></a> Scroll 
 
 Scroll style
 
-### 📍 Scroll #1 / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/OJpbNQV)
+### Scroll #1 / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/OJpbNQV)
 
 ```scss
-//================================================================ [IMPORTS]
-@import '../colors';
-
-//================================================================ [SCROLL]
-@mixin scroll1() {
+// ========== [TYPE 1]
+@mixin scroll-1() {
   &::-webkit-scrollbar {
     width: .5em;
     background-color: $colorBackground;
@@ -479,6 +600,27 @@ Scroll style
   }
 }
 ```
+
+### Scroll #2 / 👨‍💻 [Codepen](https://codepen.io/alenoia/pen/PopEMLg)
+
+```scss
+// ========== [TYPE 2]
+@mixin scroll-2() {
+  &::-webkit-scrollbar {
+    width: 17px;
+    padding: 20px 0;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-2;
+    cursor: pointer;
+    border-radius: .7em;
+    border: 5px solid transparent;
+    background-clip: padding-box;  
+  }
+}
+```
+
 
 ***
 
