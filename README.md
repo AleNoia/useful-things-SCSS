@@ -46,7 +46,8 @@ Useful things that I use in SCSS and that make the work easier.
 * 🧩 Components basics like
     * Buttons and animation style
     * Card
-    * Navbar Vertical
+    * Navbar 
+    * Navbar vertical
     * Footer
     * Scroll
 ***
@@ -417,8 +418,7 @@ Basic components
 ### 📌 Table of Contents
   *  [Buttons](#Buttons)
   *  [Card](#Card)
-  *  [Navbar](#Navbar)
-  *  [Footer](#Footer)
+  *  [Navbar](#nav)
   *  [Scroll](#Scroll)
 
 
@@ -505,7 +505,41 @@ Card style
 ```
 ##
 
-## 📍 <a name="Navbar"></a> Navbar 
+## 📍 <a name="nav"></a> Navbar 
+
+### Navbar 
+Variables:
+```scss
+$navbarOn: true; //On to spacing main
+$heightNavbar: 70px; // Height navbar
+```
+#### ✏ Example:
+#### SCSS
+```scss
+.navbar{
+    @include navbar-1();
+}
+```
+#### HTML
+```html
+<nav class="navbar">
+    <div class="navbarContent">
+        <div class="navBrand mr-4">
+            <h1 class="">Brand</h1>
+        </div>
+        <div class="navbarContentMain">
+            <div class="contentStart">
+                <a href="./index.html"><button class="btn btn-primary"><i class="fas fa-ticket-alt mr-2"></i>Button Start</button></a>
+            </div>
+            <div class="contentEnd">
+                <a href="./admin.html"><button class="btn btn-primary"><i class="fas fa-crown mr-2"></i>Button End</button></a>
+            </div>
+        </div>
+    </div>
+</nav>
+```
+
+##
 
 ### Navbar Vertical
 #### The body and main have to have these settings
